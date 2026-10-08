@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Watch Abdulkadir Biffo's PhD defence live from TU Delft, Tuesday 27 October 2026 at 10:00 (Netherlands time).">
+<meta property="og:title" content="Watch live: Abdulkadir Biffo's PhD Defence – 27 October 2026">
+<meta property="og:description" content="Livestream from TU Delft. Ceremony starts 10:00 Netherlands time; the stream opens at 09:55.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://biffoq.github.io/PhD-Defense-Invitation/live.html">
+<meta property="og:image" content="https://biffoq.github.io/PhD-Defense-Invitation/preview.jpg">
+<meta property="og:image:width" content="600">
+<meta property="og:image:height" content="847">
+<meta name="twitter:card" content="summary_large_image">
+<title>Watch the Defence Live</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Karla:wght@400;500;700&display=swap">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  :root {
+    --bg: #eef2f1;
+    --surface: #ffffff;
+    --ink: #13343b;
+    --muted: #4d6469;
+    --line: #cfdad8;
+    --accent: #b5832f;
+    --accent-ink: #ffffff;
+    --live: #c2412d;
+    --lattice: rgba(19, 52, 59, 0.07);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #0f1f23; --surface: #16292e; --ink: #e6eeec; --muted: #9fb3b6;
+      --line: #2a4247; --accent: #d9a54c; --accent-ink: #1a1305; --live: #ef6a52;
+      --lattice: rgba(230, 238, 236, 0.06);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #0f1f23; --surface: #16292e; --ink: #e6eeec; --muted: #9fb3b6;
+    --line: #2a4247; --accent: #d9a54c; --accent-ink: #1a1305; --live: #ef6a52;
+    --lattice: rgba(230, 238, 236, 0.06);
+  }
+  body {
+    margin: 0;
+    -webkit-text-size-adjust: 100%;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Karla", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+    padding-inline: 16px;
+    background-image: radial-gradient(circle at 1px 1px, var(--lattice) 1.5px, transparent 1.6px);
+    background-size: 22px 38px;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding-block: 56px 64px; display: grid; gap: 36px; }
+  .hero { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 40px; align-items: center; }
+  @media (max-width: 760px) { .hero { grid-template-columns: 1fr; gap: 28px; } .cover { max-width: 260px; } }
+  .cover { margin: 0; }
+  .cover img {
+    display: block; width: 100%; height: auto; border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.12), 0 18px 40px -18px rgba(19,52,59,.45);
+  }
+  .intro { display: grid; gap: 12px; }
+  .eyebrow { font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
+  h1 {
+    font-family: "Newsreader", Georgia, "Times New Roman", serif; font-weight: 600;
+    font-size: clamp(32px, 5vw, 46px); line-height: 1.08; margin: 0; text-wrap: balance;
+  }
+  .subtitle { margin: 0; font-family: "Newsreader", Georgia, serif; font-size: 20px; line-height: 1.35; color: var(--muted); text-wrap: balance; }
+  .author { margin: 0; font-weight: 500; }
+
+  .watch, .steps, footer { max-width: 760px; }
+  .watch {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 6px;
+    padding: 26px; display: grid; gap: 18px;
+  }
+  .status { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--line); flex: none; }
+  .is-live .status { color: var(--live); }
+  .is-live .dot { background: var(--live); animation: pulse 1.6s ease-in-out infinite; }
+  @keyframes pulse { 50% { opacity: .3; } }
+  @media (prefers-reduced-motion: reduce) { .is-live .dot { animation: none; } }
+  .countdown { display: flex; gap: 8px; margin: 0; }
+  .countdown div { flex: 1; max-width: 90px; display: grid; justify-items: start; }
+  .countdown dd {
+    margin: 0; font-family: "Newsreader", Georgia, serif; font-size: clamp(30px, 9vw, 40px); line-height: 1;
+    font-variant-numeric: tabular-nums; color: var(--accent);
+  }
+  .countdown dt { order: 2; font-size: 13px; color: var(--muted); }
+  .times { margin: 0; display: grid; gap: 10px; }
+  .times div {
+    display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px;
+    padding-bottom: 10px; border-bottom: 1px dashed var(--line);
+  }
+  .times dt { font-weight: 500; }
+  .times dd { margin: 0; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; }
+  .btn {
+    display: inline-block; background: var(--accent); color: var(--accent-ink);
+    font-weight: 700; font-size: 18px; padding: 15px 28px; border-radius: 4px; text-decoration: none;
+  }
+  .is-live .btn { background: var(--live); color: #fff; }
+  .btn:hover { filter: brightness(1.06); }
+  .link-btn {
+    color: var(--ink); text-decoration: underline; text-decoration-color: var(--accent);
+    text-underline-offset: 3px; background: none; border: 0; padding: 0; font: inherit; font-size: 15px; cursor: pointer;
+  }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  .steps h2 { font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin: 0 0 12px; }
+  .steps ol { margin: 0; padding-left: 22px; display: grid; gap: 8px; }
+  .steps li::marker { color: var(--accent); font-weight: 700; }
+  .url { word-break: break-all; font-size: 14px; color: var(--muted); }
+  footer { color: var(--muted); font-size: 15px; }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="hero">
+    <figure class="cover">
+      <img src="cover.jpg" alt="Thesis cover: Beyond Vacancy-Mediated Oxide Ion Conduction, by Abdulkadir Ọlátúnbọ̀sún Biffo" width="1055" height="1490">
+    </figure>
+    <div class="intro">
+      <span class="eyebrow">Watch the PhD defence live</span>
+      <h1>Beyond Vacancy-Mediated Oxide Ion Conduction</h1>
+      <p class="subtitle">Structure-Property Correlations in Intermediate-Temperature Solid Oxide Electrolytes</p>
+      <p class="author">Abdulkadir Ọlátúnbọ̀sún Biffo · TU Delft</p>
+    </div>
+  </header>
+
+  <section class="watch" id="watch" aria-label="Livestream">
+    <div class="status" role="status"><span class="dot"></span><span id="status-text">Tuesday 27 October 2026</span></div>
+
+    <dl class="countdown" id="countdown" aria-label="Time until the livestream starts">
+      <div><dd id="cd-d">–</dd><dt>days</dt></div>
+      <div><dd id="cd-h">–</dd><dt>hours</dt></div>
+      <div><dd id="cd-m">–</dd><dt>minutes</dt></div>
+      <div><dd id="cd-s">–</dd><dt>seconds</dt></div>
+    </dl>
+
+    <dl class="times">
+      <div><dt>Livestream opens (Netherlands)</dt><dd>09:55</dd></div>
+      <div><dt>Ceremony starts (Netherlands)</dt><dd>10:00</dd></div>
+      <div id="local-row" hidden><dt>Ceremony starts in your time zone</dt><dd id="local-time"></dd></div>
+    </dl>
+
+    <div class="actions">
+      <a class="btn" id="watch-btn" href="https://nmclive.tudelft.nl/mediasite/play/b7e565817c874b09a5690927a4d021ec1d" target="_blank" rel="noopener">Open the livestream</a>
+      <button type="button" class="link-btn" id="cal-btn">Add to my calendar</button>
+      <button type="button" class="link-btn" id="copy-btn">Copy stream link</button>
+    </div>
+  </section>
+
+  <section class="steps">
+    <h2>Joining online</h2>
+    <ol>
+      <li>Open the livestream link a few minutes before 09:55 Netherlands time. It works in any web browser on a phone, tablet or computer.</li>
+      <li>Turn your sound on, and plug your phone in if you're watching on it.</li>
+    </ol>
+    <p class="url">https://nmclive.tudelft.nl/mediasite/play/b7e565817c874b09a5690927a4d021ec1d</p>
+  </section>
+
+  <footer>Thank you for joining from wherever you are. Abdulkadir</footer>
+</main>
+
+<script>
+  // 27 Oct 2026 is after the clocks change in the Netherlands (25 Oct), so local time is CET = UTC+1.
+  const STREAM_START = Date.UTC(2026, 9, 27, 8, 55); // 09:55 NL
+  const CEREMONY     = Date.UTC(2026, 9, 27, 9, 0);  // 10:00 NL
+  const DAY_END      = Date.UTC(2026, 9, 27, 23, 0); // midnight NL
+  const STREAM_URL   = document.getElementById('watch-btn').href;
+
+  const pad = n => String(n).padStart(2, '0');
+  const $ = id => document.getElementById(id);
+
+  // Show the ceremony time in the visitor's own time zone when it differs from the Netherlands.
+  try {
+    const nl = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Amsterdam', hour: '2-digit', minute: '2-digit', day: 'numeric' }).format(CEREMONY);
+    const mine = new Intl.DateTimeFormat('en-GB', { hour: '2-digit', minute: '2-digit', day: 'numeric' }).format(CEREMONY);
+    if (nl !== mine) {
+      const fmt = new Intl.DateTimeFormat(undefined, { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit', timeZoneName: 'short' });
+      $('local-time').textContent = fmt.format(CEREMONY);
+      $('local-row').hidden = false;
+    }
+  } catch (e) {}
+
+  function tick() {
+    const now = Date.now();
+    const watch = $('watch');
+    if (now < STREAM_START) {
+      let s = Math.floor((STREAM_START - now) / 1000);
+      $('cd-d').textContent = Math.floor(s / 86400); s %= 86400;
+      $('cd-h').textContent = pad(Math.floor(s / 3600)); s %= 3600;
+      $('cd-m').textContent = pad(Math.floor(s / 60));
+      $('cd-s').textContent = pad(s % 60);
+      $('status-text').textContent = 'Livestream starts in';
+    } else if (now < DAY_END) {
+      watch.classList.add('is-live');
+      $('countdown').hidden = true;
+      $('status-text').textContent = 'Live now';
+      $('watch-btn').textContent = 'Watch now';
+      return;
+    } else {
+      $('countdown').hidden = true;
+      $('status-text').textContent = 'This defence took place on 27 October 2026';
+      return;
+    }
+    setTimeout(tick, 1000);
+  }
+  tick();
+
+  $('copy-btn').addEventListener('click', async e => {
+    const btn = e.currentTarget;
+    try { await navigator.clipboard.writeText(STREAM_URL); btn.textContent = 'Copied'; }
+    catch (err) { btn.textContent = 'Copy failed: use the link below'; }
+    setTimeout(() => { btn.textContent = 'Copy stream link'; }, 2500);
+  });
+
+  $('cal-btn').addEventListener('click', () => {
+    const ics = [
+      'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Biffo//Defence livestream//EN', 'BEGIN:VEVENT',
+      'UID:biffo-defence-livestream-20261027@biffoq.github.io',
+      'DTSTAMP:20261008T120000Z',
+      'DTSTART:20261027T085500Z',
+      'DTEND:20261027T100000Z',
+      "SUMMARY:Abdulkadir's PhD defence (livestream)",
+      'DESCRIPTION:Watch live: ' + STREAM_URL + '\\nCeremony starts 10:00 Netherlands time.',
+      'URL:' + STREAM_URL,
+      'LOCATION:' + STREAM_URL,
+      'BEGIN:VALARM', 'TRIGGER:-PT15M', 'ACTION:DISPLAY', 'DESCRIPTION:Defence livestream starts soon', 'END:VALARM',
+      'END:VEVENT', 'END:VCALENDAR'
+    ].join('\r\n');
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([ics], { type: 'text/calendar' }));
+    a.download = 'Abdulkadir-defence-livestream.ics';
+    document.body.appendChild(a); a.click(); a.remove();
+  });
+</script>
+</body>
+</html>
